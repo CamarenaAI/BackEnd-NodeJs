@@ -58,3 +58,34 @@ const explorers = [
       }
     }
    ]
+
+
+console.log("Ejercicio 1: Imprime el nombre")
+explorers.forEach(nombre => console.log(nombre.name))
+
+console.log("Ejercicio 2: Stack")
+explorers.forEach(stck => console.log(stck.stack))
+
+console.log("Ejercicio 3: MAP")
+let newStack = explorers.map(stck => stck.stack)
+console.log(newStack)
+
+console.log("Ejercicio 4: FILTER")
+let stackJS = explorers.filter(stck => stck.stack.includes("js"))
+console.log(stackJS)
+
+console.log("Ejercicio 5: FIND")
+let findCountry = explorers.find(fnd => fnd.city == "CDMX")
+console.log(findCountry)
+
+console.log("Ejercicio 6: REDUCE")
+let reduc = explorers.reduce((acc, element) => acc + element.exercises_completed,0)
+console.log(reduc);
+
+console.log("Ejercicio 7: SOME")
+let validar = explorers.some(val => val.missions.frontend.exercisesFinished)
+console.log(validar)
+
+console.log("Ejercicio 8: EVERY")
+let terminado = explorers.every(end => end.missions.onboarding.isFinished)
+console.log(terminado)
