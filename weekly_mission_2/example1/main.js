@@ -15,7 +15,11 @@ const twitter = {
       return `User: ${this.username} this profile is from ${this.user}`
     }
    }
+<<<<<<< HEAD
    
+=======
+
+>>>>>>> b09f42efc36bd536035a24f774490dc8db1b22b3
    console.log("Nombre del usuario: " + twitter.user)
    console.log("hashtags: " + twitter.hashtag)
    console.log(twitter.url)
@@ -53,4 +57,8 @@ const uber = {
    
    console.log(uber.getGeneralInfo())   
    console.log(uber.cellphone_number)
+<<<<<<< HEAD
    console.log(uber.payment)
+=======
+   console.log(uber.payment)
+>>>>>>> b09f42efc36bd536035a24f774490dc8db1b22b3
