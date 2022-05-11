@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 })
 
 // Respondiendo texto
-// localhost:3000launchx
+// localhost:3000/launchx
 app.get('/launchx', (req, res) => {
     res.send("Bienvenidos a launchx")
 })
@@ -26,7 +26,7 @@ app.get('/explorersInNode', (req, res) => {
 // Query Params: Recibir parámetros por la url
 // http://localhost:3000/explorer/ismael
 // req.params = {"explorerName":"ismael"}
-app.get('/explorers/:soyElExplorerIsmael', (req, res) => {
+app.get('/explorers/:explorerName', (req, res) => {
     res.send(req.params)
 })
 
